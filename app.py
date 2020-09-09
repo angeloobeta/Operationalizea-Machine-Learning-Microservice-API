@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+import os
 from flask.logging import create_logger
 import logging
 
@@ -55,6 +56,7 @@ def predict():
     
     # Logging the input payload
     json_payload = request.json
+    LOG.info(f"The Json payload of the input data inform of json datastructure: \n{json_payload}")
     LOG.info(f"JSON payload: \n{json_payload}")
     inference_payload = pd.DataFrame(json_payload)
     LOG.info(f"Inference payload DataFrame: \n{inference_payload}")
@@ -62,8 +64,10 @@ def predict():
     scaled_payload = scale(inference_payload)
     # get an output prediction from the pretrained model, clf
     prediction = list(clf.predict(scaled_payload))
+    # get the predicted value from the pretained model
+    LOG.info(f"The Predicted value: \n{prediction}")
     # TO DO:  Log the output prediction value
-    return jsonify({'prediction': prediction})
+    return jsonify({'The prediction in form of a json': prediction})
 
 if __name__ == "__main__":
     # load pretrained model as clf

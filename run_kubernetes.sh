@@ -4,14 +4,14 @@
 
 # Step 1:
 # This is your Docker ID/path
-dockerpath= . 
+# dockerpath=<>
+dockerpath= /my-microservice
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl run microservice-project\
+kubectl run udacity-microservice-project\
     --images=$dockerpath\
     --port=80 --labels app=microservice-project
-
 
 
 # Step 3:

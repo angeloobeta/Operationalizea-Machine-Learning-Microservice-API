@@ -22,3 +22,5 @@ docker login docker.io
 
 docker push $dockerpath
 # docker push $dockerpath
+
+[![CircleCI](https://circleci.com/gh/angeloobeta/Operationalizea-Machine-Learning-Microservice-API.svg?style=svg)](https://circleci.com/gh/angeloobeta/Operationalizea-Machine-Learning-Microservice-API)

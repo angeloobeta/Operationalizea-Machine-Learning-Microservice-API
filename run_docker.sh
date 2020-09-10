@@ -18,9 +18,6 @@ docker run -p 8000:80 microservice-app
 # docker run -it microservice-app bash
 # docker run -it -p 8000:80 microservice-app 
 
-# To run the container, given "microservice-app" as the image tag 
-# and my-running-app as the container name:
-
 # docker run -it --rm --name my-microservice my-microservice-app
 
 # Logging the details of the container

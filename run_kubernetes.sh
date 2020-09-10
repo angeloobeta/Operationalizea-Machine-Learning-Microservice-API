@@ -22,7 +22,6 @@ kubectl run udacity-microservice-project\
 # Step 3:
 # List kubernetes pods
 kubectl get pods
-kubectl 
 kubectl get events
 
 # Step 4:

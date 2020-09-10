@@ -5,12 +5,8 @@
 
 # Step 1:
 # Create dockerpath
-#  dockerpath=<your docker ID/path>
-dockerpath = angeloobeta/microservice-app
-# docker tag 
-
 # Note that my user ID is angeloobeta
-
+dockerpath = angeloobeta/microservice-app
 
 # Step 2:  
 # Authenticate & tag
@@ -20,6 +16,9 @@ docker login docker.io
 
 # Step 3:
 # Push image to a docker repository
+
+# docker tag microservice-app:latest udacity-microservice-project \
+#     angeloobeta/microservice-app
 
 docker push $dockerpath
 # docker push $dockerpath

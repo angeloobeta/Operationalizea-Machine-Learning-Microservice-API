@@ -6,10 +6,10 @@
 # Step 1:
 # Create dockerpath
 #  dockerpath=<your docker ID/path>
-# imageid=47274164
-# dockerpath=$imageid/my-microservice
 dockerpath = angeloobeta/microservice-app
 # docker tag 
+
+# Note that my user ID is angeloobeta
 
 
 # Step 2:  

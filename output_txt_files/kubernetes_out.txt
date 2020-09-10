@@ -1,1 +1,69 @@
+NAME                           READY   STATUS    RESTARTS   AGE
+udacity-microservice-project   1/1     Running   1          149m
+
+Port: 8000
+{
+  "The prediction in form of a json": [
+    20.35373177134412
+  ]
+}
+
+
+
+
+Forwarding from 127.0.0.1:8000 -> 80
+Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
+
+
+
 <paste log output from Kubernetes-mediated prediction, here>
+
+LAST SEEN   TYPE      REASON                    OBJECT                             MESSAGE
+42h         Normal    Starting                  node/minikube                      Starting kubelet.
+42h         Normal    NodeHasSufficientMemory   node/minikube                      Node minikube status is now: NodeHasSufficientMemory
+42h         Normal    NodeHasNoDiskPressure     node/minikube                      Node minikube status is now: NodeHasNoDiskPressure
+42h         Normal    NodeHasSufficientPID      node/minikube                      Node minikube status is now: NodeHasSufficientPID
+42h         Normal    NodeAllocatableEnforced   node/minikube                      Updated Node Allocatable limit across pods
+42h         Normal    RegisteredNode            node/minikube                      Node minikube event: Registered Node minikube in Controller
+42h         Warning   readOnlySysFS             node/minikube                      CRI error: /sys is read-only: cannot modify conntrack limits, problems may arise later (If running Docker, see docker issue #24000)
+42h         Normal    Starting                  node/minikube                      Starting kube-proxy.
+42h         Normal    Starting                  node/minikube                      Starting kubelet.
+42h         Normal    NodeHasSufficientMemory   node/minikube                      Node minikube status is now: NodeHasSufficientMemory
+42h         Normal    NodeHasNoDiskPressure     node/minikube                      Node minikube status is now: NodeHasNoDiskPressure
+42h         Normal    NodeHasSufficientPID      node/minikube                      Node minikube status is now: NodeHasSufficientPID
+42h         Normal    NodeAllocatableEnforced   node/minikube                      Updated Node Allocatable limit across pods
+42h         Normal    RegisteredNode            node/minikube                      Node minikube event: Registered Node minikube in Controller
+42h         Warning   readOnlySysFS             node/minikube                      CRI error: /sys is read-only: cannot modify conntrack limits, problems may arise later (If running Docker, see docker issue #24000)
+42h         Normal    Starting                  node/minikube                      Starting kube-proxy.
+30m         Normal    Starting                  node/minikube                      Starting kubelet.
+30m         Normal    NodeHasSufficientMemory   node/minikube                      Node minikube status is now: NodeHasSufficientMemory
+30m         Normal    NodeHasNoDiskPressure     node/minikube                      Node minikube status is now: NodeHasNoDiskPressure
+30m         Normal    NodeHasSufficientPID      node/minikube                      Node minikube status is now: NodeHasSufficientPID
+30m         Normal    NodeAllocatableEnforced   node/minikube                      Updated Node Allocatable limit across pods
+29m         Warning   readOnlySysFS             node/minikube                      CRI error: /sys is read-only: cannot modify conntrack limits, problems may arise later (If running Docker, see docker issue #24000)
+29m         Normal    Starting                  node/minikube                      Starting kube-proxy.
+29m         Normal    RegisteredNode            node/minikube                      Node minikube event: Registered Node minikube in Controller
+10m         Normal    Scheduled                 pod/udacity-microservice-project   Successfully assigned default/udacity-microservice-project to minikube
+10m         Normal    Pulling                   pod/udacity-microservice-project   Pulling image "angeloobeta/microservice-app"
+4m23s       Normal    Pulled                    pod/udacity-microservice-project   Successfully pulled image "angeloobeta/microservice-app" in 5m39.940104613s
+4m4s        Normal    Created                   pod/udacity-microservice-project   Created container udacity-microservice-project
+4m1s        Normal    Started                   pod/udacity-microservice-project   Started container udacity-microservice-project
+
+
+
+kubectl logs -p udacity-microservice-project 
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 306-430-551

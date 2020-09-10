@@ -5,19 +5,26 @@
 # Step 1:
 # This is your Docker ID/path
 # dockerpath=<>
-dockerpath= /my-microservice
+dockerpath= angeloobeta/microservice-app
 
 # Step 2
 # Run the Docker Hub container with kubernetes
 kubectl run udacity-microservice-project\
-    --images=$dockerpath\
+    --images=angeloobeta/microservice-app
+    --port=80 --labels app=microservice-project
+
+
+kubectl run udacity-microservice-project\
+    --images=$dockerpath
     --port=80 --labels app=microservice-project
 
 
 # Step 3:
 # List kubernetes pods
 kubectl get pods
+kubectl 
+kubectl get events
 
 # Step 4:
 # Forward the container port to a host
-kubectl port-forward microservice-project 8000:80
+kubectl port-forward microservice-project 80:8000

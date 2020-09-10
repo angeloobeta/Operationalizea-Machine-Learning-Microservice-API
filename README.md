@@ -3,4 +3,4 @@ Operationalizing a Machine Learning Microservice API;  using a pre-trained, skle
 odel that has been trained to predict housing prices in Boston according to several features, such as 
 average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on.
 ---
-
+[![CircleCI](https://circleci.com/gh/angeloobeta/Operationalizea-Machine-Learning-Microservice-API.svg?style=svg)](https://circleci.com/gh/angeloobeta/Operationalizea-Machine-Learning-Microservice-API)
